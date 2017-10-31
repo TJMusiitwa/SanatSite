@@ -21,32 +21,43 @@
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">Sanat Trading Limited</a>
+      <a class="navbar-brand" href="index.html" style="font-size:20px">Sanat Trading Limited</a>
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home
-              <span class="sr-only">(current)</span>
+            <a class="nav-link" href="About.html" style="font-size:20px">About
+
             </a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Products
+            <a class="nav-link" href="#" style="font-size:20px">Products
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Contact_Us.html">Contact Us</a>
+            <a class="nav-link" href="Contact_Us.html" style="font-size:20px">Contact Us</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
   <main role="main">
+    <!--Jumbotron-->
+    <section class="jumbotron jumbotron-fluid text-center" style="background-image: url(img/prod1.jpg); background-size: 100% 100%;">
+      <div class="container">
+        <h1 class="display-3 text-white">Product-Catalogue</h1>
+        <p class="lead">Look at our distinct collection of products ready to serve your branding desire</p>
+      </div>
+    </section>
+    <!--Main Content-->
+    <!--Sidebar-->
+
     <section>
       <div class="container">
-        <div class="row">
-          <div class="col">
+
+        <div id='content' class='row'>
+          <div class='col-2'>
             <h2>Product Categories</h2>
             <ul class="list-group">
 
@@ -148,37 +159,125 @@
             </ul>
           </div>
 
-          <div class="col">
-            <div class="card" style="width: 20rem;">
-              <div class="card-body">
-                <h4 class="card-title">Card title</h4>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
+          <!--Card Section-->
+          <div class='col-10'>
+            <h2>Main Content Section</h2>
+            <!--Column 2-->
+            <div class="card-deck">
+              <div class="card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Card title</h4>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content
+                    is a little bit longer.</p>
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Card title</h4>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Card title</h4>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has
+                    even longer content than the first to show that equal height action.</p>
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-100"></div>
+            <br>
+
+            <div class="card-deck">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Card title2</h4>
+                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Card title</h4>
+                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Card title</h4>
+                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
+              </div>
+            </div>
+            <div class="w-100"></div>
+            <br>
+            <br>
+            <div class="card-deck">
+
+
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Card title3</h4>
+                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Card title</h4>
+                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Card title</h4>
+                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
               </div>
             </div>
 
           </div>
 
-          <!--Column 2-->
-          <div class="col">
-            <div class="card" style="width: 20rem;">
-              <div class="card-body">
-                <h4 class="card-title">Card title</h4>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-              </div>
-            </div>
 
-          </div>
+
+
 
 
         </div>
 
       </div>
+      </div>
+
+
     </section>
 
   </main>
@@ -195,26 +294,20 @@
         </div>
         <div class="col-sm-4 py-4">
           <h4 class="text-white">Contact</h4>
-          <ul class="list-unstyled">
-            <li>
-              <p style="color:white">Plot 10, Jinja road, Opposite NEMA House,
-                <br> Property Service Building,
-                <br> First floor, Suite No.3.</p>
-            </li>
-            <li>
-              <p style="color:white">P.O.Box 21338, Kampala.</p>
-            </li>
-            <li>
-              <p style="color:white">+ 256-414-342156
-                <br>+ 256-701-083326 </p>
-            </li>
-            <li>
-              <a href="mailto:admin@sanatuganda.com" class="text-white">admin@sanatuganda.com</a>
-            </li>
-            <li>
-              <a href="mailto:jackie@sanatuganda.com" class="text-white">jackie@sanatuganda.com</a>
-            </li>
-          </ul>
+          <address class="text-white">
+            Plot 10, Jinja road, Opposite NEMA House,
+            <br> Property Service Building,
+            <br> First floor, Suite No.3
+            <br>
+            <br> P.O.Box 21338, Kampala
+            <br> + 256-414-342156
+            <br> + 256-701-083326
+            <br>
+            <br>
+            <a href="mailto:admin@sanatuganda.com" class="text-white">admin@sanatuganda.com</a>
+            <br>
+            <a href="mailto:jackie@sanatuganda.com" class="text-white">jackie@sanatuganda.com</a>
+          </address>
         </div>
         <p class="float-right">
           <a class="float-right" href="#">Back to top</a>
