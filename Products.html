@@ -10,6 +10,9 @@
     crossorigin="anonymous">
   <!--Font Awesome Icons-->
   <script src="https://use.fontawesome.com/9fc9211da7.js"></script>
+  <!--Ekko Lightbox-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+  <link rel="import" href="Galleries.html">
 
   <title>Products</title>
 </head>
@@ -54,12 +57,11 @@
     <!--Sidebar-->
 
     <section>
-      <div class="container">
+      <div class="container-fluid">
 
         <div id='content' class='row'>
-          <div class='col-2'>
-            <h2>Product Categories</h2>
-            <ul class="list-group">
+          <div class='col'>
+            <ul class="btn-group-vertical">
 
               <button type="button" class="list-group-item list-group-item-action dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
@@ -160,14 +162,16 @@
           </div>
 
           <!--Card Section-->
-          <div class='col-10'>
-            <h2>Main Content Section</h2>
+          <div class='col-sm-10'>
             <!--Column 2-->
             <div class="card-deck">
               <div class="card">
-                <img class="card-img-top" src="..." alt="Card image cap">
+                <a href="img/j.jpg" data-title="A random title" data-toggle="lightbox" data-max-width="600" data-gallery="hidden-images"
+                  class="card-img-top">
+                  <img src="img/j.jpg" class="img-fluid" data-max-width="600">
+                </a>
                 <div class="card-body">
-                  <h4 class="card-title">Card title</h4>
+                  <h4 class="card-title text-center">Accessories</h4>
                   <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content
                     is a little bit longer.</p>
                   <p class="card-text">
@@ -175,10 +179,16 @@
                   </p>
                 </div>
               </div>
+              <!-- elements not showing, use data-remote -->
+              <div data-toggle="lightbox" data-gallery="hidden-images" data-remote="https://unsplash.it/1200/768.jpg?image=264" data-title="Hidden item 1"></div>
+              <div data-toggle="lightbox" data-gallery="hidden-images" data-remote="https://unsplash.it/1200/768.jpg?image=265" data-title="Hidden item 3"></div>
+              <div data-toggle="lightbox" data-gallery="hidden-images" data-remote="https://unsplash.it/1200/768.jpg?image=266" data-title="Hidden item 4"></div>
+              <div data-toggle="lightbox" data-gallery="hidden-images" data-remote="https://unsplash.it/1200/768.jpg?image=267" data-title="Hidden item 5"></div>
+              <!-- elements not showing, use data-remote -->
               <div class="card">
-                <img class="card-img-top" src="..." alt="Card image cap">
+                <img class="card-img-top" src="img/j.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h4 class="card-title">Card title</h4>
+                  <h4 class="card-title">Apparels</h4>
                   <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                   <p class="card-text">
                     <small class="text-muted">Last updated 3 mins ago</small>
@@ -186,14 +196,14 @@
                 </div>
               </div>
               <div class="card">
-                <img class="card-img-top" src="..." alt="Card image cap">
+                <img class="card-img-top" src="img/j.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h4 class="card-title">Card title</h4>
+                  <h4 class="card-title">Bags</h4>
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has
                     even longer content than the first to show that equal height action.</p>
-                  <p class="card-text">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
                 </div>
               </div>
             </div>
@@ -203,6 +213,19 @@
 
             <div class="card-deck">
               <div class="card">
+                <div class="card-img-top">
+                  <a href="https://unsplash.it/1200/768.jpg?image=263" data-title="A random title" data-toggle="lightbox" data-max-width="600"
+                    data-gallery="hidden-images" class="card-img-top">
+                    <img src="https://unsplash.it/600.jpg?image=263" class="img-fluid" data-max-width="600">
+                  </a>
+                </div>
+                <!-- elements not showing, use data-remote -->
+                <div data-toggle="lightbox" data-gallery="hidden-images" data-remote="https://unsplash.it/1200/768.jpg?image=264" data-title="Hidden item 1"></div>
+                <div data-toggle="lightbox" data-gallery="hidden-images" data-remote="https://unsplash.it/1200/768.jpg?image=265" data-title="Hidden item 3"></div>
+                <div data-toggle="lightbox" data-gallery="hidden-images" data-remote="https://unsplash.it/1200/768.jpg?image=266" data-title="Hidden item 4"></div>
+                <div data-toggle="lightbox" data-gallery="hidden-images" data-remote="https://unsplash.it/1200/768.jpg?image=267" data-title="Hidden item 5"></div>
+                <!-- elements not showing, use data-remote -->
+
                 <div class="card-body">
                   <h4 class="card-title">Card title2</h4>
                   <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
@@ -328,6 +351,19 @@
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
     crossorigin="anonymous"></script>
+  <!--Ekko Lightbox js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+  <script>
+    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+      event.preventDefault();
+      $(this).ekkoLightbox({
+        alwaysShowClose: true,
+        onShown: function () {
+          console.log('Checking our the events huh?');
+        },
+      });
+    });
+  </script>
 </body>
 
 </html>

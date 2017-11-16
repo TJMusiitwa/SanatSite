@@ -48,21 +48,21 @@
     </section>
     <!--Contact Form-->
     <section>
-      <form class="container">
+      <form class="container" name="sentMessage" id="contactForm" novalidate>
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputName">Name</label>
-            <input type="text" class="form-control" id="inputName" placeholder="Name">
+            <input type="text" class="form-control" id="inputName" placeholder="Name" required data-validation-required-message="Please enter your name.">
           </div>
           <div class="form-group col-md-6">
             <label for="inputContact">Contact number</label>
-            <input type="tel" class="form-control" id="inputContact" placeholder="0771234567">
+            <input type="tel" class="form-control" id="inputContact" placeholder="0771234567" required data-validation-required-message="Please enter your phone number.">
           </div>
         </div>
 
         <div class="form-group">
           <label for="inputEmail">Email</label>
-          <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+          <input type="email" class="form-control" id="inputEmail" placeholder="Email" required data-validation-required-message="Please enter your email address.">
         </div>
         <div class="form-group">
           <label for="inputCompany">Company</label>
@@ -70,13 +70,14 @@
         </div>
         <div class="form-group">
           <label for="inputMessage">Your Message</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your message here..."></textarea>
+          <textarea class="form-control" id="message" rows="3" placeholder="Enter your message here..."></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <div id="success"></div>
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="sendMessageButton">Submit</button>
       </form>
       <br>
     </section>
-
+    <!--Map Location-->
     <section>
       <div>
         <iframe class="embed-responsive-item" width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ0U1k9Xi8fRcRt-RL_QpNM50&key=AIzaSyCEPz6_VhSUfajiLKMlu-Eb9QzAFTBrCg8"
@@ -114,13 +115,8 @@
           </address>
         </div>
       </div>
-
     </div>
-
-
   </footer>
-
-
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -129,6 +125,10 @@
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
     crossorigin="anonymous"></script>
+
+  <!-- Contact form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_us.js"></script>
 </body>
 
 </html>
